@@ -14,11 +14,12 @@ const Country = () => {
         }
         // console.log(data)
         // data && data.map(element => console.log(element.capital))
-        const countryList = data && <ul className="list-decimal">{data.map((element, index) => <li key={index}>{<Link to={"/Country/Info"} state={{ api: element }}>{element.name.common}</Link>}
+        const countryList = data && <ul className="country-list list-decimal">{data.map((element, index) => <li key={index}>{<Link to={"/Country/Info"} state={{ api: element }}>{element.name.common}</Link>}
     </li>)}</ul>
   return (
     <div>
         {countryList}
+        
     </div>
   )
 }

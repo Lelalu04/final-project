@@ -53,3 +53,10 @@
   box-shadow: 0 6px 15px rgb(36 37 38 / 25%);
 
 }
+.title-container{
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+
+}
+.country-list{
+  columns: 4;
+}

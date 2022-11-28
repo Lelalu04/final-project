@@ -5,6 +5,7 @@ import Info from './Pages/Info';
 
 import Header from './Components/Header/Header';
 import Country from './Pages/Country';
+import SearchPage from './Pages/SearchPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/Country/Info' element={<Info/>}/>
       <Route path='/Country' element={<Country/>}/>
+      <Route path='/SearchPage' element={<SearchPage/>}/>
     </Routes>
     </div>
     </>
