@@ -11,12 +11,12 @@ const SearchPage = () => {
         getData()
     }, [location.state.text])
     
-    console.log(location.state.text)
     async function getData() {
         const res = await axios.get("https://restcountries.com/v3.1/name/"+location.state.text)
+        .catch(error => 
+            error.response.data.status == 404 && setData(null))
         setData(res.data)
     }
-    // data && console.log(data.data)
     const countryList = data ? <ul className="country-list list-decimal">{data.map((element, index) => <li key={index}>{<Link to={"/Country/Info"} state={{ api: element }}>{element.name.common}</Link>} 
     </li>)}</ul> : <h2>Sorry we don't have the result</h2>
     
