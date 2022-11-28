@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.image {
+  padding-top: 100px;
+}
+.content-container{
+  display: flex;
+  justify-content: space-between;
+}
+.country-info{
+  width: 470px;
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+
+}
+.image-container{
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  box-shadow: 0 6px 15px rgb(36 37 38 / 25%);
+
 }
