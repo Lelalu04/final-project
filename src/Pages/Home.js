@@ -2,7 +2,7 @@ const Home = () => {
     return (
         <div className="h-screen ">
             <h1 className="text-center ">
-                Hello world!
+                HELLO COME TO LAST PROJECT
             </h1>
         </div>
     )
